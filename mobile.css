@@ -1,0 +1,112 @@
+#mobile_btn {
+    display: none;
+}
+
+#mobile_btn .material-symbols-outlined {
+    font-size: 40px; 
+    color: #720a29;
+}
+
+#mbl_menu {
+    display: none;
+}
+
+.btn_ctt_mbl {
+    display: none;
+}
+
+.mbl_itemnav a {
+    color: #720a29;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mbl_itemnav a:hover {
+    color: #ff004c;
+}
+
+.mbl_itemnav a:active {
+    border-bottom: 3px solid #dfe0d5;
+    color: #dfe0d5;
+}
+
+@media screen and (max-width: 930px) {
+    #navlist , .btn_ctt {
+        display: none;
+    }
+
+    #navbar {
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background: transparent;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        padding-left: 3px;
+        padding-bottom: 5px;
+        cursor: pointer;
+        align-self: center;
+        margin-left: auto;
+    }
+
+    .btn_ctt_mbl {
+        display: block;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        padding: 6px 11px;
+        border: none;
+        border-radius: 25px;
+        background-color: #720a29;
+        color: beige;
+        align-self: center;
+        cursor: pointer;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+        flex-shrink: 0;
+    }
+
+    #mbl_navlist {
+        flex-direction: column;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .mbl_itemnav {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .mbl_itemnav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav_logo {
+        height: 60px;
+        width: auto;
+        padding-top: 5px;
+    }
+
+    #mbl_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asllu Papelaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="carrossel.css">
+    <link rel="stylesheet" href="sobreNós.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="images/logo.png" alt="Logo da Asllu Papelaria" id="nav_logo">
+
+            <ul id="navlist">
+                <li class="itemnav" ><a  href="index.html" >Início</a> </li>
+                <li class="itemnav" ><a  href="#sobrenos" >Sobre Nós</a> </li>
+                <li class="itemnav" ><a  href="index.html" >Forms</a> </li>
+                <li class="itemnav" ><a  href="index.html" >Contato</a> </li>
+            </ul>
+
+            <button id="mobile_btn">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+
+            <a href="https://wa.me/SEUNUMERO" class="btn_ctt">
+                Entrar em contato
+            </a>
+
+        </nav>
+        <div id="mbl_menu">
+            <ul id="mbl_navlist">
+                <li class="mbl_itemnav" ><a  href="home.html" >Início</a> </li>
+                <li class="mbl_itemnav" ><a  href="#sobrenos" >Sobre Nós</a> </li>
+                <li class="mbl_itemnav" ><a  href="home.html" >Forms</a> </li>
+                <li class="mbl_itemnav" ><a  href="contato.html" >Contato</a> </li>
+            </ul>
+            <button class="btn_ctt_mbl">
+                Entrar em contato
+            </button>
+                
+            </div>
+    </header>
+    <main>
+        <section class="destaques">
+            <div class="conteudo_destaque">
+                <h2>Principais Produtos</h2>
+                <div class="carrossel_cont" id="carrossel">
+                    <button id="prev_btn" class="carrossel_btn prev_btn">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+
+                    <div class="carrossel_wrapper">   
+                        <div class="carrossel_slide">
+                            <img src="images/controlefinan.jpg" alt="Controle Financeiro">
+                            <div class="info_produto">
+                                <h3>Controle Financeiro</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu mi fringilla, cursus tellus ac, tincidunt purus. Aenean eu lorem augue. Sed maximus velit sed sem laoreet, sed iaculis risus placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
+                            </div>
+                        </div>
+                        <div class="carrossel_slide">
+                            <img src="images/listadecompras.jpeg" alt="Lista de Compras">
+                            <div class="info_produto">
+                                <h3>Lista de Compras</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu mi fringilla, cursus tellus ac, tincidunt purus. Aenean eu lorem augue. Sed maximus velit sed sem laoreet, sed iaculis risus placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
+                            </div>
+                        </div>
+                        <div class="carrossel_slide">
+                            <img src="images/planner.jpeg" alt="Planner">
+                            <div class="info_produto">
+                                <h3>Planner</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu mi fringilla, cursus tellus ac, tincidunt purus. Aenean eu lorem augue. Sed maximus velit sed sem laoreet, sed iaculis risus placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="next_btn" class="carrossel_btn next_btn">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="quemSomos" id="sobrenos">
+            <div class="colunaImagem">
+                <img src="images/boss.jpg" alt="Imagem das donas da empresa">   
+            </div>
+            <div class="colunaTexto">
+                <h2 class="titulo">Sobre Nós</h2>
+                <p class="paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu mi fringilla, cursus tellus ac, tincidunt purus. Aenean eu lorem augue. Sed maximus velit sed sem laoreet, sed iaculis risus placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
+                <a href="https://wa.me/SEUNUMERO" class="btn_ctt_quemsomos">
+                    Entrar em contato
+                </a>
+
+            </div>
+        </section>
+        <section class="formulario" id="forms">
+            <div class="cont_form">
+                <div class="conteudo_form">
+                    <form name="Contato" method="POST" data-netlify="true">
+                        <h2>Solicite seu Kit</h2>
+                        <p>Preencha o formulário para solicitar seu kit. Entraremos em contato com você em breve.</p>
+                        <div class="form-grupo">
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+                        <button type="submit" class="btn_enviar">Enviar</button>
+                    </form>
+                </div>
+                <div class="form_imagem">
+                    <img src="images/boss.jpg" alt="Imagem do Produto">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>

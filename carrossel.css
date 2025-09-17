@@ -1,0 +1,124 @@
+.destaques {
+    background-color: #edeee6;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.conteudo_destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destaques h2{
+    font-size: 2.5rem;
+    color: #720a29;
+    padding-top: 15px;
+    margin-bottom: 40px;
+}
+
+.carrossel_cont {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    max-width: 1280px;
+    position: relative;
+    margin: 0 auto;
+    padding: 25px 50px;
+    box-sizing: border-box;
+}
+
+.carrossel_wrapper {
+    display:flex;
+    transition: transform 0.5s ease-in-out;
+    margin-right: -30px;
+}
+
+.carrossel_btn {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(114, 10, 41, 0.7);
+    color:beige;
+    border:none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev_btn {
+    left: 0px;
+}
+
+.next_btn{
+    right: 0px;
+}
+
+.carrossel_btn:hover {
+    background: #db0042;
+}
+.carrossel_slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100%;
+    gap: 30px;
+}
+
+.carrossel_slide img {
+    max-width: 45%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.info_produto {
+    max-width: 45%;
+    text-align: left;
+}
+
+.info_produto h3 {
+    color: palevioletred;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .carrossel_cont {
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .carrossel_wrapper {
+        margin-right: 0;
+    }
+
+    .carrossel_btn {
+        display: none;
+    }
+
+    .carrossel_slide {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .carrossel_slide img, .info_produto {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .carrossel_slide img {
+        width: 100%;
+        height: auto;
+    }
+}
+

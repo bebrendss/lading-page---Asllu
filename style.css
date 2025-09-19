@@ -16,6 +16,13 @@ header {
     box-sizing: border-box;
 }
 
+footer {
+    background-color:rgb(193, 190, 173);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
 .container {
     width: 100%;
     box-sizing: border-box;
@@ -25,6 +32,15 @@ header {
     h2 {
         font-size: 1.8rem; 
     }
+}
+.navbar_fixa {
+    position: fixed; /* A mágica acontece aqui! */
+    top: 0;          /* Cola o elemento no topo da tela */
+    left: 0;         /* Cola o elemento na esquerda da tela */
+    width: 100%;     /* Faz o elemento ocupar toda a largura */
+    background-color: rgb(193, 190, 173);; /* Cor de fundo para não ficar transparente */
+    z-index: 1000;   /* Garante que a barra fique acima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil opcional */
 }
 
 #navbar {

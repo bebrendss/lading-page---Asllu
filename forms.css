@@ -32,8 +32,6 @@
     margin-bottom: 8px;
     margin-top: 20px;
     color: #333;
-
-    
 }
 
 .form-grupo input, .form-grupo textarea {
@@ -91,7 +89,7 @@
     margin-bottom: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     .formulario {
         padding: 30px 0;
     }
@@ -102,7 +100,6 @@
         padding:20px;
         gap: 20px;
         box-sizing: border-box;
-
     }
 
     .form_imagem {

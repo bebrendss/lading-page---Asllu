@@ -1,0 +1,117 @@
+.footer {
+    background-color: rgb(193, 190, 173); 
+    color: #353535; 
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.rodape {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.colunaRodape {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+    .colunaRodape {
+        width: 48%;
+    }
+}
+
+@media (min-width: 992px) {
+    .colunaRodape {
+        width: 30%;
+    }
+}
+
+.logo_rodape {
+    max-width: 160px;
+    margin-bottom: 20px;
+}
+
+.descrição_rodape {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.colunaRodape h4 {
+    color: #5a001b;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: 600;
+    position: relative;
+}
+
+.colunaRodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+.colunaRodape ul li {
+    margin-bottom: 10px;
+}
+
+.colunaRodape ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.colunaRodape ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.colunaRodape p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.redessociais {
+    margin-top: 20px;
+}
+
+.redessociais a {
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.redessociais a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.rodape_bottom {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    border-top: 1px solid #4d4d4d;
+}
+
+.rodape_bottom p {
+    margin: 0;
+    font-size: 14px;
+}

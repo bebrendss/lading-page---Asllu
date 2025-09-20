@@ -54,39 +54,40 @@
     </header>
     <main>
         <section class="formulario" id="forms">
-    <div class="cont_form">
-        <div class="conteudo_form">
-            
-            <form name="Contato" method="POST" data-netlify="true">
-                <h2>Solicite seu Kit</h2>
-                <p>Preencha o formulário para solicitar seu kit. Entraremos em contato com você em breve.</p>
-                <div class="form-grupo">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <div class="form-grupo">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-grupo">
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" required>
-                </div>
-                <button type="submit" class="btn_enviar">Enviar</button>
-            </form>
+            <input type="hidden" name="form-name" value="Contato" />
+            <div class="cont_form">
+                <div class="conteudo_form">
+                    
+                    <form name="Contato" method="POST" data-netlify="true">
+                        <h2>Solicite seu Kit</h2>
+                        <p>Preencha o formulário para solicitar seu kit. Entraremos em contato com você em breve.</p>
+                        <div class="form-grupo">
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+                        <button type="submit" class="btn_enviar">Enviar</button>
+                    </form>
 
-            <div id="mensagem-sucesso" style="display: none;">
-                <h3>Enviado com Sucesso!</h3>
-                <p>Obrigado pelo seu contato. Entraremos em contato em breve.</p>
+                    <div id="mensagem-sucesso" style="display: none;">
+                        <h3>Enviado com Sucesso!</h3>
+                        <p>Obrigado pelo seu contato. Entraremos em contato em breve.</p>
+                    </div>
+                    
+                </div>
+                <div class="form_imagem">
+                    <img src="images/boss.jpg" alt="Imagem do Produto">
+                </div>
             </div>
-            
-        </div>
-        <div class="form_imagem">
-            <img src="images/boss.jpg" alt="Imagem do Produto">
-        </div>
-    </div>
-</section>
-        
+        </section>
+                
         <section class="quemSomos" id="sobrenos">
             <div class="cont_sobrenos">
                 <div class="colunaImagem">

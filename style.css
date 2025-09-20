@@ -4,7 +4,7 @@ body {
     color: #000000;
     margin: 0;
     padding: 0;
-    padding-top: 80px;
+    padding-top: 20px;
     box-sizing: border-box;
     height: 100%;
 }
@@ -100,4 +100,18 @@ footer {
 
 .btn_ctt:hover {
     background-color: #db0042;
+}
+
+@media screen and (max-width: 900px) {
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #dfe0d5;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        padding-top: 90px;
+        box-sizing: border-box;
+        height: 100%;
+    }
 }

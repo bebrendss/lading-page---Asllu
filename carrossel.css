@@ -125,3 +125,12 @@
     }
 }
 
+@media screen and (max-width: 410px) {
+    .destaques h2{
+    font-size: 2rem;
+    color: #720a29;
+    padding-top: 15px;
+    margin-bottom: 40px;
+}
+}
+

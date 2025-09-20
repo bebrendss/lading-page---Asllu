@@ -1,18 +1,38 @@
 $(document).ready(function() {
-    // Código do menu (mantém o que já está funcionando)
-    $("#mobile_btn").on("click", function (){
+    $("#mobile_btn").on("click", function() {
         $("#mbl_menu, .btn_ctt_mbl").toggleClass("active");
     });
 
-    // CÓDIGO DO CARROSSEL CORRIGIDO
-    // Apenas ativa o carrossel em telas com mais de 768px de largura
-    if ($(window).width() > 768) {
-        var carrosselWrapper = $("#carrossel .carrossel_wrapper");
-        var slides = carrosselWrapper.find(".carrossel_slide");
-        var prevBtn = $("#prev_btn"); 
-        var nextBtn = $("#next_btn");
-        var currentIndex = 0;
-        
+    var form = $('form[name="Contato"]');
+    var successMessage = $('#mensagem-sucesso');
+
+    form.on('submit', function(event) {
+        event.preventDefault();
+        var formData = $(this).serialize();
+
+        $.ajax({
+            method: 'POST',
+            url: '/',
+            data: formData,
+            success: function() {
+                console.log('Formulário enviado com sucesso!');
+                form.hide();
+                successMessage.show();
+            },
+            error: function(error) {
+                console.error('Erro ao enviar o formulário:', error);
+                alert('Ocorreu um erro ao enviar. Por favor, tente novamente.');
+            }
+        });
+    });
+
+    var carrosselWrapper = $("#carrossel .carrossel_wrapper");
+    var slides = carrosselWrapper.find(".carrossel_slide");
+    var prevBtn = $("#prev_btn");
+    var nextBtn = $("#next_btn");
+    var currentIndex = 0;
+
+    if (slides.length > 0) {
         function moverCarrossel(index) {
             var slideWidth = slides.outerWidth(true);
             var offset = -index * slideWidth;
@@ -20,7 +40,6 @@ $(document).ready(function() {
             currentIndex = index;
         }
 
-        // Ação dos botões
         nextBtn.on("click", function() {
             var nextIndex = currentIndex + 1;
             if (nextIndex >= slides.length) {
@@ -37,7 +56,6 @@ $(document).ready(function() {
             moverCarrossel(prevIndex);
         });
 
-        // Movimento automático
         setInterval(function() {
             nextBtn.click();
         }, 4000);

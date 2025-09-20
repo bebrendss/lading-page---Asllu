@@ -3,6 +3,8 @@ $(document).ready(function() {
         $("#mbl_menu, .btn_ctt_mbl").toggleClass("active");
     });
 
+    $('#telefone').mask('(00) 00000-0000');
+
     var form = $('form[name="Contato"]');
     var successMessage = $('#mensagem-sucesso');
 

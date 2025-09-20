@@ -34,13 +34,13 @@ footer {
     }
 }
 .navbar_fixa {
-    position: fixed; /* A mágica acontece aqui! */
-    top: 0;          /* Cola o elemento no topo da tela */
-    left: 0;         /* Cola o elemento na esquerda da tela */
-    width: 100%;     /* Faz o elemento ocupar toda a largura */
-    background-color: rgb(193, 190, 173);; /* Cor de fundo para não ficar transparente */
-    z-index: 1000;   /* Garante que a barra fique acima de outros elementos */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil opcional */
+    position: fixed; 
+    top: 0;         
+    left: 0;         
+    width: 100%;    
+    background-color: rgb(193, 190, 173);; 
+    z-index: 1000;   
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 
 #navbar {
@@ -100,4 +100,3 @@ footer {
 .btn_ctt:hover {
     background-color: #db0042;
 }
-

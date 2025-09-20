@@ -10,6 +10,14 @@ $(document).ready(function() {
 
     form.on('submit', function(event) {
         event.preventDefault();
+
+        var formElement = this;
+
+        if (!formElement.checkValidity()) {
+            formElement.reportValidity();
+            return;
+        }
+
         var formData = $(this).serialize();
 
         $.ajax({

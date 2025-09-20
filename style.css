@@ -4,6 +4,7 @@ body {
     color: #000000;
     margin: 0;
     padding: 0;
+    padding-top: 80px;
     box-sizing: border-box;
     height: 100%;
 }
@@ -36,7 +37,7 @@ footer {
 .navbar_fixa {
     position: fixed; 
     top: 0;         
-    left: 0;         
+    left: 0;       
     width: 100%;    
     background-color: rgb(193, 190, 173);; 
     z-index: 1000;   
